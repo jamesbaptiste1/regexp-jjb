@@ -32,49 +32,27 @@
       }
     </style>
     <!-- Custom JavaScript -->
-    <script>
+    <script type="text/javascript">
         function print() {
-            var str = "table football";
+            // var str = "table football";
+            var str = document.getElementById("input1").value;
+
             var re = /foo/i;
+            //var re = document.getElementById("re").value;
+
             var answer = document.getElementById("answer");
             answer.innerHTML = re.test(str)}
-    //         var demo = document.getElementById("demo");
-    // demo.innerHTML = 5 + 6;}
-
-    //   const str = "table football";
-
-    //   const regex = RegExp("foo*");
-    //   const globalRegex = RegExp("foo*", "g");
-
-    //   console.log(regex.test(str));
-    //   // expected output: true
-
-    //   console.log(regex.test(str));
-    //   // expected output: true
-
-    //   console.log(globalRegex.lastIndex);
-    //   // expected output: 0
-
-    //   console.log(globalRegex.test(str));
-    //   // expected output: true
-
-    //   console.log(globalRegex.lastIndex);
-    //   // expected output: 9
-
-    //   console.log(globalRegex.test(str));
-    //   // expected output: false
-    // 
     </script>
   </head>
   <body>
       <h1>Regular Expression Test </h1>
     <div class="position-inputs">
-      <form action="">
+      <form>
         Input 1:<br />
-        <input type="text" name="firstname" value="" />
+        <input type="text" id="input1" />
         <br />
         Input 2:<br />
-        <input id="input2" type="text" name="lastname" value="Mouse" />
+        <input type="text" id="re"  />
         <br /><br />
         </div>
         <div class="position-output">
@@ -82,11 +60,8 @@
         <output id = "answer"></output>
         </div>
       </form>
-      <form action="">
-          
-      </form>
     <div class="position-button">
-      <button onclick="print()">Test RegEx </button>
+      <button onclick="print()"  >Test RegEx </button>
     </div>
   </body>
 </html>
