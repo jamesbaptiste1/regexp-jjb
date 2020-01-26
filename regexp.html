@@ -21,47 +21,47 @@
         left: 35%;
         top: 40%;
       }
-      .position-output{
+      .position-output {
         position: absolute;
         left: 55%;
         top: 44%;
       }
-      h1{
-          position: center;
-          font-size: 50px;
+      h1 {
+        font-size: 50px;
       }
     </style>
     <!-- Custom JavaScript -->
-    <script type="text/javascript">
-        function print() {
-            // var str = "table football";
-            var str = document.getElementById("input1").value;
+    <script>
+      function print() {
+        // var str = "table football";
+        var str = document.getElementById("input1").value;
 
-            var re = /foo/i;
-            //var re = document.getElementById("re").value;
+        var re = /foo/i;
+        //var re = document.getElementById("re").value;
 
-            var answer = document.getElementById("answer");
-            answer.innerHTML = re.test(str)}
+        var answer = document.getElementById("answer");
+        answer.innerHTML = re.test(str);
+      }
     </script>
   </head>
   <body>
-      <h1>Regular Expression Test </h1>
-    <div class="position-inputs">
-      <form>
+    <h1>Regular Expression Test</h1>
+    <form>
+      <div class="position-inputs">
         Input 1:<br />
         <input type="text" id="input1" />
         <br />
         Input 2:<br />
-        <input type="text" id="re"  />
+        <input type="text" id="re" />
         <br /><br />
-        </div>
-        <div class="position-output">
+      </div>
+      <div class="position-output">
         output:
-        <output id = "answer"></output>
-        </div>
-      </form>
+        <output id="answer"></output>
+      </div>
+    </form>
     <div class="position-button">
-      <button onclick="print()"  >Test RegEx </button>
+      <button onclick="print()">Test RegEx</button>
     </div>
   </body>
 </html>
