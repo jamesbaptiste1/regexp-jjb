@@ -1,4 +1,4 @@
-function print() {
+function regex() {
   // var str = "table football";
   var str = document.getElementById("input1").value;
 
