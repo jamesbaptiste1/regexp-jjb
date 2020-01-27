@@ -1,0 +1,22 @@
+.position-button {
+  position: absolute;
+  left: 46%;
+  top: 44%;
+  color: aqua;
+}
+body {
+  background-color: aqua;
+}
+.position-inputs {
+  position: absolute;
+  left: 35%;
+  top: 40%;
+}
+.position-output {
+  position: absolute;
+  left: 55%;
+  top: 44%;
+}
+h1 {
+  font-size: 50px;
+}
